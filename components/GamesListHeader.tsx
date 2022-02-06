@@ -24,7 +24,7 @@ function GamesListHeader({ selectedGame, setSelectedGame }: Props) {
     <header className={styles.GameListHeader}>
       <div className={styles.GameListHeaderLogo}>
         <Link href="/">
-          <Image src="/homeIcon.svg" height={68} width={68} />
+          <Image src="/homeIcon.svg" height={50} width={50} />
         </Link>
       </div>
       <div className={styles.GamesList}>
@@ -51,7 +51,7 @@ function GameIcon({
   isActive,
   setSelectedGame,
 }: GameIconProps) {
-  const imageSize = isActive ? 153 : 113;
+  const imageSize = isActive ? 110 : 80;
 
   const changeGame = () => setSelectedGame(GameName);
 

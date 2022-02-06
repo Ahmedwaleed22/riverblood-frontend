@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             onClick={downloadGames}
             className={styles.launcherDownloadButton}
           >
-            Download <FontAwesomeIcon icon={faWindows} />
+            Browse <FontAwesomeIcon icon={faWindows} />
           </div>
         </div>
         <div className={styles.showcaseImages}>
