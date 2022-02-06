@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className={styles.showcaseImages}>
-          <Image src="/pc.svg" height={600} width={600} />
+          <Image src="/pc.svg" height={600} width={600} alt="Pc Image" />
         </div>
       </section>
 
@@ -83,6 +83,7 @@ const Home: NextPage = () => {
             src="/about/studio.png"
             height={718}
             width={996.35}
+            alt="Studio Image"
           />
           <div className={styles.smallImagesContainer}>
             <Image
@@ -90,12 +91,14 @@ const Home: NextPage = () => {
               src="/about/game1.png"
               height={493.5}
               width={441.61}
+              alt="Game Image"
             />
             <Image
               className={styles.smallImage}
               src="/about/game2.png"
               height={550}
               width={502}
+              alt="Game Image"
             />
           </div>
         </div>
@@ -106,13 +109,13 @@ const Home: NextPage = () => {
             industry and development,And the first of its kind in the region, at
             Middle East was established in 2018, Our studio has the expertise of
             programmers and designers, where we created the first game، GRAND OF
-            EL-MATARYA ®, It's one of our first small works, and We have
-            projects under development, one of them called "Last Drop: The
-            Beginning", we planning to compete in Game of the year on E3 (GOTY),
-            and we aspire to compete with advanced gaming studios، We have a lot
-            of projects to do, and we have our vision. With the dedication of
-            our team , our studio will become one of the most powerful gaming
-            studios.
+            EL-MATARYA ®, It{"'"}s one of our first small works, and We have
+            projects under development, one of them called{" "}
+            {'"Last Drop: The Beginning"'}, we planning to compete in Game of
+            the year on E3 (GOTY), and we aspire to compete with advanced gaming
+            studios، We have a lot of projects to do, and we have our vision.
+            With the dedication of our team , our studio will become one of the
+            most powerful gaming studios.
           </p>
           <div className={styles.mobileImages}>
             <Image
@@ -120,6 +123,7 @@ const Home: NextPage = () => {
               src="/about/studio.png"
               height={718}
               width={996.35}
+              alt="Studio Image"
             />
             <div className={styles.smallImagesContainer}>
               <Image
@@ -127,12 +131,14 @@ const Home: NextPage = () => {
                 src="/about/game1.png"
                 height={493.5}
                 width={441.61}
+                alt="Game Image"
               />
               <Image
                 className={styles.smallImage}
                 src="/about/game2.png"
                 height={550}
                 width={502}
+                alt="Game Image"
               />
             </div>
           </div>

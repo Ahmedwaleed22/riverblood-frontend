@@ -7,7 +7,7 @@ import GamesListHeader from "../../components/GamesListHeader";
 
 import styles from "../../styles/GamesList.module.css";
 
-function games() {
+function Games() {
   const router = useRouter();
   const [selectedGame, setSelectedGame] = useState("GOMI");
 
@@ -60,9 +60,14 @@ function games() {
         </div>
       ) : (
         <div className={styles.GameDescription}>
-          <Image src="/Games/GOMIILogo.png" height={85} width={253} />
+          <Image
+            src="/Games/GOMIILogo.png"
+            height={85}
+            width={253}
+            alt="Grand Of Matarya II Logo"
+          />
           <p>
-            Part II of Grand Of El-Matareya, with new title "Will Of Crime",
+            Part II of Grand Of El-Matareya, with new title {'"Will Of Crime"'},
             Every piece of this game made by 1 person except the VOs.
           </p>
           <div
@@ -77,4 +82,4 @@ function games() {
   );
 }
 
-export default games;
+export default Games;

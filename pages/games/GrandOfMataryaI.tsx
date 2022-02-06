@@ -66,6 +66,7 @@ function Home() {
             className={styles.GOMICharacterImage}
             width={750}
             height={820}
+            alt="Grand Of Matarya Character"
           />
         </div>
       </div>

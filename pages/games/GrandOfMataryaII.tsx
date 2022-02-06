@@ -44,7 +44,12 @@ function GrandOfMataryaI() {
       <Header background={false} color="#F51D1D" />
       <div className={styles.GOMIIContainer}>
         <div className={styles.GOMIILogo}>
-          <Image src="/Games/GOMIILogo.png" width={285.5} height={100} />
+          <Image
+            src="/Games/GOMIILogo.png"
+            width={285.5}
+            height={100}
+            alt="Grand Of Matarya II Character"
+          />
         </div>
         <h1 className={styles.GOMIITitle}>GRAND OF EL-Matareya II</h1>
         <p className={styles.GOMIIDescription}>
