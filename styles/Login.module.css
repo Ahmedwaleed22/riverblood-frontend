@@ -26,6 +26,7 @@
   background: transparent;
   outline: none;
   font-size: 18px;
+  z-index: 999999;
 }
 .LoginContainer {
   display: flex;
