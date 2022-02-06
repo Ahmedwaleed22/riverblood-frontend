@@ -1,116 +1,110 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.showcase {
+  background: #100337;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  color: #fff;
+  padding: 0 80px;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.showcaseText > h1 {
+  text-transform: uppercase;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.showcaseText > h1 > span {
+  display: block;
+  margin-bottom: 10px;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.showcaseText > p {
+  text-transform: uppercase;
+  color: var(--grayTextColor);
+  margin-top: 30px
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.launcherDownloadButton {
+  background: #FF00F6;
+  max-width: 160px;
   text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  padding: 10px 20px;
+  z-index: 2;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.launcherDownloadButton > svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.ourProjects {
+  height: 100%;
+  background-color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.projectsContainer {
+  background: #fff;
+  width: 70%;
+  border-radius: 5px;
+  height: 90%;
+  margin: 50px auto;
+  padding: 30px 30px 50px 30px;
+  z-index: 1;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.projectsContainerTitle {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.about {
+  display: flex;
+  background: var(--primaryColor);
+  padding: 100px 30px;
+  color: #fff;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.mainTitle {
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+.largeImage {
+  width: 50%;
+}
+.smallImagesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.smallImage {
+  width: 45% !important;
+  min-width: 98% !important;
+}
+.aboutText {
+  width: 100%;
+  margin-left: 50px;
+}
+.mobileImages {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .showcase {
+    padding: 0 20px;
+  }
+  .showcaseImages {
+    display: none;
+  }
+  .projectsContainer {
+    width: 90%;
+  }
+  .images {
+    display: none;
+  }
+  .aboutText {
+    margin-left: 0;
+  }
+  .mobileImages {
+    display: block;
   }
 }

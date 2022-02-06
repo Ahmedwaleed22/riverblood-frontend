@@ -1,0 +1,35 @@
+.container {
+  background-image: url("/Games/GamesBanner.png"),
+    url("/Games/GOMIBackground.png");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.GameDescription {
+  color: #fff;
+  padding: 0 30px 30px 30px;
+}
+.GameDescription > h1 {
+  font-size: 3.5em;
+}
+.GameDescription > h1 > span {
+  display: block;
+}
+.GameDescription > h1 > span:nth-child(2) {
+  margin-left: 50px;
+}
+.GameDescription > p {
+  max-width: 486px;
+}
+.downloadButton {
+  background: #0d66ff;
+  color: #fff;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  cursor: pointer;
+}

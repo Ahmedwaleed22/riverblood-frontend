@@ -1,0 +1,153 @@
+/*
+    LOGIN PAGE
+*/
+.LoginPage {
+  background: #ebeff8;
+  color: #19232f;
+  min-height: 100vh;
+}
+.FormGroup {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+.FormGroupLabel {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #5b70ff;
+  font-weight: bold;
+}
+.FormGroupInput {
+  padding: 20px 10px;
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+}
+.LoginContainer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.LoginCharacter {
+  width: 600px;
+  margin-right: 50px;
+  z-index: 1;
+}
+.AnimatedLoginCharacter {
+  animation: backCharacterPosition 2s ease forwards;
+}
+.LoginForm {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+}
+.LoginSubmitButton {
+  outline: none;
+  border: 0;
+  width: 120px;
+  border-radius: 10px !important;
+  cursor: pointer;
+  margin-left: 10px;
+  background: linear-gradient(to bottom right, #795afe, #5b70ff);
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.AnimatedLoginForm {
+  animation: backFormPosition 2s ease forwards;
+}
+.RegisterLink {
+  text-align: right;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.RegisterLink > span {
+  color: #5b70ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1250px) {
+  .LoginContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .LoginCharacter {
+    display: none;
+  }
+}
+/*
+    REGISTER PAGE
+*/
+.RegisterCharacter {
+  animation: changeCharacterPosition 2s ease forwards;
+}
+.RegisterForm {
+  transform: translateX(-20%);
+  animation: changeFormPosition 2s ease forwards;
+}
+@keyframes changeCharacterPosition {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+@keyframes changeFormPosition {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-90%);
+  }
+}
+@keyframes backCharacterPosition {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes backFormPosition {
+  from {
+    transform: translateX(-90%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .LoginContainer {
+    width: 90%;
+  }
+  .RegisterCharacter {
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .RegisterForm,
+  .LoginForm {
+    animation: none;
+    transform: translateX(0);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .LoginContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .LoginContainer {
+    width: 90%;
+  }
+}

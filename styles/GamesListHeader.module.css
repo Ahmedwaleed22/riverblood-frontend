@@ -1,0 +1,34 @@
+.GameListHeader {
+  display: flex;
+  padding: 20px 50px;
+}
+.GameListHeaderLogo {
+  width: 100px;
+  height: 100px;
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.GameListHeaderLogo > svg {
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+.GamesList {
+  display: flex;
+  margin-left: 70px;
+}
+.game {
+  border: 1px solid #fff;
+  height: max-content;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.activeGame {
+  border: 3px solid #fff !important;
+}
+.game:not(:first-child) {
+  margin-left: 50px;
+}

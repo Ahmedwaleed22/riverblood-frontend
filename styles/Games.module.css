@@ -1,0 +1,128 @@
+.GOMIIDownloadPage {
+  background: url("/Games/GOMIIDownloadBackground.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.GOMIIContainer {
+  padding: 170px 0 0 80px;
+  max-width: 700px;
+}
+.GOMIILogo {
+  border-bottom: 3px solid #f51d1d;
+}
+.GOMIITitle {
+  font-size: 2.5em;
+}
+.GOMIIDescription {
+  color: #848484;
+  font-size: 1.2em;
+}
+.actions {
+  display: flex;
+}
+.GOMIIDownloadButton {
+  background: #f51d1d;
+  width: 196px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: #afafaf;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.GOMIITrailerButton {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+  color: #f51d1d;
+}
+.GOMIITrailerButton {
+  font-size: 1.4em;
+  text-decoration: line-through;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.GOMIITrailerButton > svg {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 760px) {
+  .GOMIIContainer {
+    padding: 190px 10px;
+  }
+}
+.GOMIDownloadPage {
+  height: 100vh;
+  overflow: hidden;
+  background: #ebeff8;
+  color: #19232f;
+}
+.GOMIContainer {
+  display: flex;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  align-items: center;
+}
+.GOMIContainerSide {
+  padding: 0 40px;
+  max-width: 760px;
+}
+.GOMIGameTitle {
+  font-size: 3em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.GOMIGameDescription {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+}
+.GOMICharacterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  z-index: -1;
+}
+.GOMIDownloadButton {
+  padding: 15px 70px !important;
+  font-size: 18px;
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.GOMIDownloadButton > svg {
+  height: 20px;
+  width: 20px;
+}
+.GOMIStyledButton {
+  background: linear-gradient(to bottom right, #795afe, #5b70ff);
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.GOMIStyledButtonText {
+  margin-right: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 1085px) {
+  .GOMIContainerSide {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 650px) {
+  .GOMICharacterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
