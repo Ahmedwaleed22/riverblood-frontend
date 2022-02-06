@@ -14,6 +14,11 @@
 .GameDescription {
   color: #fff;
   padding: 0 30px 30px 30px;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
 }
 .GameDescription > h1 {
   font-size: 4em;
