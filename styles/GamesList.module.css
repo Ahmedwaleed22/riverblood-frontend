@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "PRICEDOWN";
+  src: url("../public/fonts/pricedownbl.otf");
+}
 .container {
   background-image: url("/Games/GamesBanner.png"),
     url("/Games/GOMIBackground.png");
@@ -12,7 +16,8 @@
   padding: 0 30px 30px 30px;
 }
 .GameDescription > h1 {
-  font-size: 3.5em;
+  font-size: 4em;
+  font-family: "PRICEDOWN";
 }
 .GameDescription > h1 > span {
   display: block;
@@ -24,7 +29,7 @@
   max-width: 486px;
 }
 .downloadButton {
-  background: #0d66ff;
+  background: linear-gradient(to bottom right, #0d66ff, #01a8ff);
   color: #fff;
   border-radius: 15px;
   width: 200px;

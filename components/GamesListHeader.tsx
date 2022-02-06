@@ -1,30 +1,30 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
-import styles from '../styles/GamesListHeader.module.css';
+import styles from "../styles/GamesListHeader.module.css";
 
 interface Props {
-  selectedGame: string,
-  setSelectedGame: React.Dispatch<React.SetStateAction<string>>
+  selectedGame: string;
+  setSelectedGame: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface GameIconProps {
-  GameName: string,
-  GameImage: string,
-  isActive: boolean,
-  setSelectedGame: React.Dispatch<React.SetStateAction<string>>
+  GameName: string;
+  GameImage: string;
+  isActive: boolean;
+  setSelectedGame: React.Dispatch<React.SetStateAction<string>>;
 }
 
-function GamesListHeader({selectedGame, setSelectedGame}: Props) {
+function GamesListHeader({ selectedGame, setSelectedGame }: Props) {
   return (
     <header className={styles.GameListHeader}>
       <div className={styles.GameListHeaderLogo}>
         <Link href="/">
-          <FontAwesomeIcon icon={faHome} />
+          <Image src="/homeIcon.svg" height={68} width={68} />
         </Link>
       </div>
       <div className={styles.GamesList}>
@@ -32,7 +32,7 @@ function GamesListHeader({selectedGame, setSelectedGame}: Props) {
           GameName="GOMI"
           GameImage="/Games/GOMIMainLogo.png"
           isActive={selectedGame == "GOMI" ? true : false}
-          setSelectedGame={setSelectedGame} 
+          setSelectedGame={setSelectedGame}
         />
         <GameIcon
           GameName="GOMII"
@@ -45,16 +45,24 @@ function GamesListHeader({selectedGame, setSelectedGame}: Props) {
   );
 }
 
-function GameIcon({ GameName, GameImage, isActive, setSelectedGame }: GameIconProps) {
+function GameIcon({
+  GameName,
+  GameImage,
+  isActive,
+  setSelectedGame,
+}: GameIconProps) {
   const imageSize = isActive ? 153 : 113;
 
   const changeGame = () => setSelectedGame(GameName);
 
   return (
-    <div onClick={changeGame} className={`${styles.game} ${isActive ? styles.activeGame : ""}`}>
+    <div
+      onClick={changeGame}
+      className={`${styles.game} ${isActive ? styles.activeGame : ""}`}
+    >
       <Image src={GameImage} height={imageSize} width={imageSize} />
     </div>
-  )
+  );
 }
 
 export default GamesListHeader;
