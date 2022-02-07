@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 import axios from "axios";
 import { UserContext } from "../contexts/UserContext";
 
-axios.defaults.baseURL = "http://localhost:8000/api/";
+axios.defaults.baseURL = "https://riverblood.herokuapp.com/api/";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [token, setToken] = useState<string | null>(null);
