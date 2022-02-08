@@ -1,5 +1,7 @@
 .showcase {
-  background: #100337;
+  background: url("/showcaseBackground.png");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: space-around;
