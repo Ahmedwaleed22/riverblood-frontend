@@ -65,7 +65,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={styles.ourProjects} id="ourprojects">
+      {/* <section className={styles.ourProjects} id="ourprojects">
         <div className={styles.projectsContainer}>
           <h2 className={styles.projectsContainerTitle}>Our Projects</h2>
           <ProjectsContainer>
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
             ))}
           </ProjectsContainer>
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.about} id="about">
         <div className={styles.images}>

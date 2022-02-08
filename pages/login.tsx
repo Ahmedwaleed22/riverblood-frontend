@@ -20,7 +20,7 @@ function Login() {
   // Login Credentials
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
 
   // Context Variables
   const { setToken, setUser } = useContext(UserContext);
@@ -61,7 +61,7 @@ function Login() {
       credentials = {
         username: username,
         password: password,
-        phone_number: phoneNumber,
+        email: email,
       };
     }
 
@@ -164,10 +164,10 @@ function Login() {
             />
             {phoneNumberRequired ? (
               <FormInput
-                title="phone number (OPTIONAL)"
-                placeholder="enter your phone number"
+                title="email address (OPTIONAL)"
+                placeholder="enter your email address"
                 isPassword={false}
-                stateVariable={setPhoneNumber}
+                stateVariable={setEmail}
               />
             ) : (
               <></>
