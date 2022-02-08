@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -12,25 +13,30 @@ import { UserContext } from "../../contexts/UserContext";
 import styles from "../../styles/Games.module.css";
 
 function Home() {
-  const { token } = useContext(UserContext);
+  const router = useRouter();
+  const { token, user } = useContext(UserContext);
 
   const downloadGame = async () => {
-    try {
-      const { data }: any = await axios.post(
-        "/download",
-        {
-          game_name: "GrandOfMataryaI",
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
+    if (user) {
+      try {
+        const { data }: any = await axios.post(
+          "/download",
+          {
+            game_name: "GrandOfMataryaI",
           },
-        }
-      );
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
-      window.open(data.download_link, "_blank");
-    } catch (e) {
-      console.error(e);
+        window.open(data.download_link, "_blank");
+      } catch (e) {
+        console.error(e);
+      }
+    } else {
+      router.push("/login");
     }
   };
 

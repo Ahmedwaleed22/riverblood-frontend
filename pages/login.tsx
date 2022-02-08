@@ -106,18 +106,7 @@ function Login() {
         router.push("/games");
       }
     } catch (e: any) {
-      switch (e.response.status) {
-        case 409:
-          alert("Username Already Registered!");
-          break;
-        case 400:
-          alert("Invalid Data");
-          break;
-        default:
-          alert("Unknown Error");
-          break;
-      }
-
+      alert(e.response.data.error);
       console.error(e);
     }
   };
